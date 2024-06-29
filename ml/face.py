@@ -1,7 +1,11 @@
 import cv2
 
-img= cv2.imread("3.jpg", cv2.IMREAD_COLOR)
-fc = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+img= cv2.imread("2.jpg", cv2.IMREAD_COLOR)
+# fc = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+fc = cv2.CascadeClassifier("haarcascade_eye.xml")
+# fc = cv2.CascadeClassifier("haarcascade_mcs_nose.xml")
+# fc = cv2.CascadeClassifier("haarcascade_mcs_rightear.xml")
+# fc = cv2.CascadeClassifier("haarcascade_mcs_leftear.xml")
 
 grey_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
